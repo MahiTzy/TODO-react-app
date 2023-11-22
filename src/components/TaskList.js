@@ -29,18 +29,6 @@ export default function TaskList({ tasks, setTasks, handleDelete,editId,handleEd
               <TaskCard key={task.id} task={task} handleDelete={handleDelete} editId={editId} handleEdit={handleEdit} />
             ))}
         </ul>
-        {/* <BoxCard>
-        <p>Hi My name is Ckki.</p>
-      </BoxCard>
-      <BoxCard>
-        <p>Hi My name is Ckki.</p>
-      </BoxCard>
-      <BoxCard>
-        <p>Hi My name is Ckki.</p>
-      </BoxCard>
-      <BoxCard>
-        <p>Hi My name is Ckki.</p>
-      </BoxCard> */}
       </div>
     </section>
   );

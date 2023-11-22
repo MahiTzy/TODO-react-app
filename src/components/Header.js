@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import Logo from "../assets/Logo.jpg";
 import Task from "../assets/TASK(2).png";
 

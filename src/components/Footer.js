@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer>
     <div className="footer">
-        <p>{year}</p>
-        <p>Made with <FontAwesomeIcon className="fotfas" icon="fa-solid fa-heart" /> by Mohit <span>Singh</span></p>
+        <p>Designed with <FontAwesomeIcon className="fotfas" icon="fa-solid fa-heart" /> by <span><a href="https://portfolio-mohit-one.vercel.app/
+">Mohit Singh</a> </span>- {year}</p>
         </div>
     </footer>
   )

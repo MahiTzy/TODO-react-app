@@ -20,6 +20,7 @@ const AddTask = ({
           placeholder="Task name"
           autoComplete="off"
           maxLength="25"
+          required
           value={taskValue}
         />
         <select

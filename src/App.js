@@ -2,7 +2,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFontAwesome, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from "react";
-import "./App.css";
 import AddTask from "./components/AddTask";
 import Footer from './components/Footer';
 import Header from "./components/Header";
@@ -20,13 +19,12 @@ export function App() {
     JSON.parse(localStorage.getItem("theme")) || "medium"
   );
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
     if (editId) {
       const date = new Date();
       const selectedTask = tasks.find(task => task.id === editId);
-      const updateTask = tasks.map((e) => (e.id === selectedTask.id ? ({...e ,id: e.id, name: TaskValue,completed:Boolean(progress), time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`}) : e));
+      const updateTask = tasks.map((e) => (e.id === selectedTask.id ? ({ ...e, id: e.id, name: TaskValue, completed: Boolean(progress), time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}` }) : e));
       setTasks(updateTask);
       setEditId(0);
       handleReset();
@@ -73,7 +71,7 @@ export function App() {
         <AddTask tasks={tasks} setTasks={setTasks} handleReset={handleReset} taskValue={TaskValue} progress={progress} setTaskValue={setTaskValue} setProgress={setProgress} handleSubmit={handleSubmit} editId={editId} />
         <TaskList tasks={tasks} setTasks={setTasks} editId={editId} handleDelete={handleDelete} handleEdit={handleEdit} />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
