@@ -135,7 +135,7 @@ header .themeSelector .activeTheme {
 .main {
   background-color: rgb(255, 255, 255);
   max-width: 1200px;
-  min-height: 70vh;
+  min-height: 65vh;
   margin: 30px auto;
   border: none;
   border-radius: 5px;
@@ -289,7 +289,10 @@ header .themeSelector .activeTheme {
     overflow-wrap: break-word;
   }
   .main{
-    min-height: 55vh;
+    min-height: 60vh;
+  }
+  .footer{
+    font-size: 10px;
   }
 }
 i:nth-child(1) {
@@ -318,6 +321,7 @@ i:nth-child(2) {
   align-items: center;
   position: relative;
   bottom: 10px;
+  font-size: 15px;
 }
 .footer p .fotfas {
   color: red;
